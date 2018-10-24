@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> shallow rendering should match snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <p
+      className="App-intro"
+    >
+      Edit 
+      <code>
+        src/App.js
+      </code>
+       and save to reload.
+    </p>
+    <a
+      className="App-link"
+      href="https://reactjs.org"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Learn React
+    </a>
+  </header>
+  <Test
+    text="Testing Components with Props"
+  />
+  <ul>
+    <li>
+      List 1
+    </li>
+    <li>
+      List 2
+    </li>
+    <li>
+      List 3
+    </li>
+  </ul>
+</div>
+`;

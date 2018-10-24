@@ -2782,6 +2782,12 @@ enzyme-adapter-utils@^1.8.0:
     object.assign "^4.1.0"
     prop-types "^15.6.2"
 
+enzyme-to-json@^3.3.4:
+  version "3.3.4"
+  resolved "https://registry.npmjs.intuit.com:443/artifactory/api/npm/npm-intuit/enzyme-to-json/-/enzyme-to-json-3.3.4.tgz#67c6040e931182f183418af2eb9f4323258aa77f"
+  dependencies:
+    lodash "^4.17.4"
+
 enzyme@^3.7.0:
   version "3.7.0"
   resolved "https://registry.npmjs.intuit.com:443/artifactory/api/npm/npm-intuit/enzyme/-/enzyme-3.7.0.tgz#9b499e8ca155df44fef64d9f1558961ba1385a46"
@@ -4809,7 +4815,7 @@ jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.npmjs.intuit.com:443/artifactory/api/npm/npm-intuit/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
-jsdom@>=11.0.0:
+jsdom@>=11.0.0, jsdom@^12.2.0:
   version "12.2.0"
   resolved "https://registry.npmjs.intuit.com:443/artifactory/api/npm/npm-intuit/jsdom/-/jsdom-12.2.0.tgz#7cf3f5b5eafd47f8f09ca52315d367ff6e95de23"
   dependencies:

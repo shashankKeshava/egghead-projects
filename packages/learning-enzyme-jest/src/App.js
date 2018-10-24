@@ -2,8 +2,14 @@ import React, {Component} from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-const Test = () => <div>Testing </div>;
+const Test = ({text}) => <div>{text}</div>;
 class App extends Component {
+    componentDidMount() {
+        this.setState({lifeCycle: "componentDidMount"});
+    }
+    componentWillReceiveProps() {
+        this.setState({lifeCycle: "componentWillReceiveProps"});
+    }
     render() {
         return (
             <div className="App">
@@ -21,7 +27,7 @@ class App extends Component {
                         Learn React
                     </a>
                 </header>
-                <Test />
+                <Test text={"Testing Components with Props"} />
                 <ul>
                     <li>List 1</li>
                     <li>List 2</li>
@@ -32,4 +38,10 @@ class App extends Component {
     }
 }
 
-export default App;
+class Link extends Component {
+    render() {
+        return <a href={this.props.address}>Click</a>;
+    }
+}
+
+export {Link, App};
