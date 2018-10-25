@@ -33,6 +33,11 @@ exports[`<App/> shallow rendering should match snapshot 1`] = `
   <Test
     text="Testing Components with Props"
   />
+  <h3
+    className="blue"
+  >
+    Welcome to Local state Test
+  </h3>
   <ul>
     <li>
       List 1
@@ -44,5 +49,25 @@ exports[`<App/> shallow rendering should match snapshot 1`] = `
       List 3
     </li>
   </ul>
+  <p
+    className="button-state"
+  >
+    No!
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Click Me
+  </button>
+  <h2 />
+  <input
+    onChange={[Function]}
+    type="text"
+  />
+  <p
+    className="lifeCycle"
+  >
+    componentDidMount
+  </p>
 </div>
 `;

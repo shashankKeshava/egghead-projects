@@ -4,11 +4,20 @@ import "./App.css";
 
 const Test = ({text}) => <div>{text}</div>;
 class App extends Component {
+    state = {
+        on: false,
+        text: "",
+        color: "blue",
+        lifeCycle: "render"
+    };
     componentDidMount() {
         this.setState({lifeCycle: "componentDidMount"});
     }
     componentWillReceiveProps() {
         this.setState({lifeCycle: "componentWillReceiveProps"});
+    }
+    handleString(data) {
+        return data.length ? true : false;
     }
     render() {
         return (
@@ -28,11 +37,24 @@ class App extends Component {
                     </a>
                 </header>
                 <Test text={"Testing Components with Props"} />
+                <h3 className={this.state.color}>
+                    Welcome to Local state Test
+                </h3>
                 <ul>
                     <li>List 1</li>
                     <li>List 2</li>
                     <li>List 3</li>
                 </ul>
+                <p className="button-state">{this.state.on ? "Yes!" : "No!"}</p>
+                <button onClick={() => this.setState({on: true})}>
+                    Click Me
+                </button>
+                <h2>{this.state.text}</h2>
+                <input
+                    onChange={e => this.setState({text: e.currentTarget.value})}
+                    type="text"
+                />
+                <p className="lifeCycle">{this.state.lifeCycle}</p>
             </div>
         );
     }
