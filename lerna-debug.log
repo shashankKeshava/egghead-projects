@@ -1,0 +1,16 @@
+0 silly argv { _: [ 'import', 'packages/gatsby-starter-project' ],
+0 silly argv   lernaVersion: '3.4.1',
+0 silly argv   '$0': 'lerna',
+0 silly argv   dir: '/Users/shashank/webapps/my-blog' }
+1 notice cli v3.4.1
+2 verbose rootPath /Users/shashank/webapps/egghead-projects
+3 error Error: Command failed: git log --format=%h
+3 error fatal: not a git repository (or any of the parent directories): .git
+3 error
+3 error
+3 error     at makeError (/Users/shashank/.nvm/versions/node/v10.2.0/lib/node_modules/lerna/node_modules/execa/index.js:174:9)
+3 error     at Function.module.exports.sync (/Users/shashank/.nvm/versions/node/v10.2.0/lib/node_modules/lerna/node_modules/execa/index.js:338:15)
+3 error     at Object.execSync (/Users/shashank/.nvm/versions/node/v10.2.0/lib/node_modules/lerna/node_modules/@lerna/child-process/index.js:22:16)
+3 error     at ImportCommand.externalExecSync (/Users/shashank/.nvm/versions/node/v10.2.0/lib/node_modules/lerna/node_modules/@lerna/import/index.js:126:34)
+3 error     at ImportCommand.initialize (/Users/shashank/.nvm/versions/node/v10.2.0/lib/node_modules/lerna/node_modules/@lerna/import/index.js:74:25)
+3 error     at Promise.resolve.then (/Users/shashank/.nvm/versions/node/v10.2.0/lib/node_modules/lerna/node_modules/@lerna/command/index.js:245:24)
